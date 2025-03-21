@@ -194,7 +194,7 @@ function clientMarquee() {
       x: "-100%",
       ease: "none",
       repeat: -1,
-      duration: 4000,
+      duration: 400,
     });
   });
 }
