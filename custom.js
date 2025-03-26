@@ -708,7 +708,14 @@ function returnToTop() {
 
 // --- PAGES
 let homePage = document.querySelector("[home-page]");
-
+function scrollPatent() {
+  $(window).on('scroll', function() {
+    let scrollTop = $(window).scrollTop();
+    $('.scroll-patten').each(function() {
+        $(this).attr('style', `transform: translateY(${scrollTop}px)`);
+    });
+  });
+}
 // --- INIT
 function init() {
   clientMarquee();
@@ -724,6 +731,7 @@ function init() {
   faqAccordions();
   cookiesSettingsLink();
   returnToTop();
+  scrollPatent();
 }
 init();
 
