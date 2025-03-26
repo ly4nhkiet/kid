@@ -712,7 +712,7 @@ function scrollPatent() {
   $(window).on('scroll', function() {
     let scrollTop = $(window).scrollTop();
     $('.scroll-patten').each(function() {
-        $(this).attr('style', `transform: translateY(${scrollTop}px)`);
+        $(this).attr('style', `transform: translateX(${scrollTop}px)`);
     });
   });
 }
