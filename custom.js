@@ -746,6 +746,7 @@ function init() {
   cookiesSettingsLink();
   returnToTop();
   scrollPatent();
+  protectAnimation();
 }
 init();
 
