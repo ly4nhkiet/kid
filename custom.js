@@ -716,6 +716,18 @@ function scrollPatent() {
     });
   });
 }
+
+function protectAnimation() {
+    gsap.to(".protect-their-animation", {
+      borderRadius: "1000px",
+      scrollTrigger: {
+          trigger: ".protect-their-animation",
+          start: "top center",
+          end: "bottom center",
+          scrub: true
+      }
+  });
+}
 // --- INIT
 function init() {
   clientMarquee();
