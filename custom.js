@@ -722,11 +722,12 @@ function protectAnimation() {
       borderRadius: "1000px",
       width: '900px',
       Height: '900px',
+      duration: 2,
       scrollTrigger: {
           trigger: ".protect-their-animation",
           start: "top center",
           end: "bottom center",
-          scrub: true
+          scrub: true,
       }
   });
 }
