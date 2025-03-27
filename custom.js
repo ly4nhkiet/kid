@@ -720,6 +720,8 @@ function scrollPatent() {
 function protectAnimation() {
     gsap.to(".protect-their-animation", {
       borderRadius: "1000px",
+      width: '900px',
+      height: '900px',
       scrollTrigger: {
           trigger: ".protect-their-animation",
           start: "top center",
