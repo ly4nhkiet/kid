@@ -718,10 +718,11 @@ function scrollPatent() {
 }
 
 function protectAnimation() {
+    let width = $('.protect-their-animation').width();
     gsap.to(".protect-their-animation", {
       borderRadius: "1000px",
-      width: '900px',
-      Height: '900px',
+      width: width < 900 ? width : '900px',
+      height: width < 900 ? width : '900px',
       duration: 2,
       scrollTrigger: {
           trigger: ".protect-their-animation",
